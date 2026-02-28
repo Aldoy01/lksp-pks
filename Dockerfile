@@ -47,8 +47,5 @@ ENV CORS_ORIGINS=*
 EXPOSE 8000
 
 # Gunakan gunicorn + uvicorn worker untuk production
-CMD ["gunicorn", "main:app", \
-     "--worker-class", "uvicorn.workers.UvicornWorker", \
-     "--workers", "2", \
-     "--bind", "0.0.0.0:8000", \
-     "--timeout", "120"]
+# Pakai sh -c agar $PORT dari Railway bisa di-expand
+CMD ["sh", "-c", "gunicorn main:app --worker-class uvicorn.workers.UvicornWorker --workers 2 --bind 0.0.0.0:${PORT:-8000} --timeout 120"]

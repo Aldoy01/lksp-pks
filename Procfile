@@ -1,1 +1,1 @@
-web: cd backend && FRONTEND_DIST=../frontend/dist uvicorn main:app --host 0.0.0.0 --port $PORT
+web: sh -c "gunicorn main:app --worker-class uvicorn.workers.UvicornWorker --workers 2 --bind 0.0.0.0:${PORT:-8000} --timeout 120"
