@@ -23,13 +23,13 @@ def kalkulasi_iksp(
         raise HTTPException(status_code=404, detail="Input data tidak ditemukan")
 
     bobot_params = db.query(ParameterBobot).all()
-    w_sosial, w_ekonomi, w_politik = get_dimension_weights(bobot_params)
+    w_struktural, w_mobilisasi, w_sentimen = get_dimension_weights(bobot_params)
 
     result = calculate_iksp(
         ind1=input_data.ind1, ind2=input_data.ind2, ind3=input_data.ind3,
         ind4=input_data.ind4, ind5=input_data.ind5, ind6=input_data.ind6,
         ind7=input_data.ind7, ind8=input_data.ind8, ind9=input_data.ind9,
-        bobot_sosial=w_sosial, bobot_ekonomi=w_ekonomi, bobot_politik=w_politik,
+        bobot_struktural=w_struktural, bobot_mobilisasi=w_mobilisasi, bobot_sentimen=w_sentimen,
     )
 
     # Upsert skor_iksp
