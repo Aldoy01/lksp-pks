@@ -2,11 +2,10 @@ import { RISK_COLORS } from '@/lib/constants'
 import type { Kategori } from '@/types'
 
 const LEGEND_ITEMS: { label: Kategori | 'Tidak ada data'; color: string }[] = [
-  { label: 'Sangat Tinggi', color: RISK_COLORS['Sangat Tinggi'] },
+  { label: 'Kritis', color: RISK_COLORS['Kritis'] },
   { label: 'Tinggi', color: RISK_COLORS['Tinggi'] },
-  { label: 'Sedang', color: RISK_COLORS['Sedang'] },
+  { label: 'Waspada', color: RISK_COLORS['Waspada'] },
   { label: 'Rendah', color: RISK_COLORS['Rendah'] },
-  { label: 'Sangat Rendah', color: RISK_COLORS['Sangat Rendah'] },
   { label: 'Tidak ada data', color: RISK_COLORS['no-data'] },
 ]
 
