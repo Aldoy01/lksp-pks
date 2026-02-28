@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle dark blue -->
+  <circle cx="100" cy="100" r="98" fill="#1a3a6b" stroke="#c8a84b" stroke-width="3"/>
+
+  <!-- Crescent moon (gold) -->
+  <path d="M100 35
+    A48 48 0 1 1 100 135
+    A36 36 0 1 0 100 35Z"
+    fill="#c8a84b" transform="rotate(-10, 100, 85)"/>
+
+  <!-- Stalk / wheat stem -->
+  <line x1="100" y1="148" x2="100" y2="170" stroke="#c8a84b" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Wheat grains left -->
+  <ellipse cx="88" cy="143" rx="7" ry="11" fill="#c8a84b" transform="rotate(-30, 88, 143)"/>
+  <ellipse cx="82" cy="131" rx="6" ry="10" fill="#c8a84b" transform="rotate(-40, 82, 131)"/>
+
+  <!-- Wheat grains right -->
+  <ellipse cx="112" cy="143" rx="7" ry="11" fill="#c8a84b" transform="rotate(30, 112, 143)"/>
+  <ellipse cx="118" cy="131" rx="6" ry="10" fill="#c8a84b" transform="rotate(40, 118, 131)"/>
+
+  <!-- Wheat grains center top -->
+  <ellipse cx="100" cy="140" rx="6" ry="10" fill="#c8a84b"/>
+
+  <!-- Text PKS -->
+  <text x="100" y="192" font-family="Arial, sans-serif" font-size="22" font-weight="bold"
+        fill="#c8a84b" text-anchor="middle" letter-spacing="4">PKS</text>
+</svg>

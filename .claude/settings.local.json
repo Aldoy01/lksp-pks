@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create vite@latest frontend -- --template react-ts --yes)",
+      "Bash(cmd.exe /c \"where node 2>nul\")",
+      "Bash(cmd.exe /c \"node --version 2>nul\")",
+      "Bash(cmd.exe /c \"node --version\")",
+      "Bash(cmd.exe /c \"npm --version\")",
+      "Bash(powershell.exe -Command \"node --version; npm --version\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(powershell.exe -Command \"python --version\")",
+      "Bash(powershell.exe -Command \"python3 --version\")",
+      "Bash(powershell.exe -Command \"\\(Get-Command python -ErrorAction SilentlyContinue\\).Source\")",
+      "Bash(powershell.exe -Command \"python --version 2>&1; node --version 2>&1; npm --version 2>&1\")",
+      "Bash(ls /c/Users/aldia/lksp/*.bat /c/Users/aldia/lksp/*.py /c/Users/aldia/lksp/*.md)",
+      "Bash(venv/Scripts/python.exe -c \"import bcrypt; print\\(''bcrypt version:'', bcrypt.__version__\\)\")",
+      "Bash(venv/Scripts/python.exe -m pip show passlib)",
+      "Bash(venv/Scripts/python.exe -m pip uninstall passlib -y)",
+      "Bash(venv/Scripts/python.exe -c \":*)",
+      "Bash(timeout 6 venv/Scripts/python.exe -m uvicorn main:app --port 8001)",
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(npm install)",
+      "Bash(timeout 8 npm run dev)",
+      "Bash(python3 -c \":*)",
+      "Bash(timeout 6 venv/Scripts/python.exe -m uvicorn main:app --port 8002)"
+    ]
+  }
+}
